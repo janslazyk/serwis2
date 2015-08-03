@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl-pl" lang="pl-pl" dir="ltr">
+<head>
+	
+  <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <base href="<%= request.original_url %>" />
+  
+  <%= custom_meta_tags %>
+  
+  <meta name="description" content="<%= title %>" />
+  <title><%= title %></title>
+  <%= custom_favicon_link_tag %>
+  
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+ 
+  <%= csrf_meta_tags %>
+  
+  
+</head>
+<body>
+
+  <%= render 'shared/navbar' %>
+  <% flash.each do |key, value| %>
+    <div class="alert alert-<%= key %>">
+        <%= value %>
+    </div>
+  <% end %>
+  <div class="main-page-content <%= (yield(:class_main))=="" ? "container-fluid" : yield(:class_main)%> <%= controller.controller_name %>">
+    <%= yield %>
+  </div>
+  <%= render 'shared/footer' %>
+
+</body>
+</html>

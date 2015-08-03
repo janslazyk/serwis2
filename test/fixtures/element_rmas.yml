@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rma_id: 1
+  lp: 1
+  pn: 1
+  sn: 1
+  producent: MyString
+  opis_produktu: MyText
+  data_sprzedazy: 2015-08-02 18:36:15
+  koniec_gwarancji: 2015-08-02 18:36:15
+  rma_klienta: MyString
+  na_gwarancji: 1
+  opis_usterki: MyText
+  uwagi: MyText
+  zalocznik: MyString
+  data_przyjecia: 2015-08-02 18:36:15
+  data_naprawy: 2015-08-02 18:36:15
+
+two:
+  rma_id: 1
+  lp: 1
+  pn: 1
+  sn: 1
+  producent: MyString
+  opis_produktu: MyText
+  data_sprzedazy: 2015-08-02 18:36:15
+  koniec_gwarancji: 2015-08-02 18:36:15
+  rma_klienta: MyString
+  na_gwarancji: 1
+  opis_usterki: MyText
+  uwagi: MyText
+  zalocznik: MyString
+  data_przyjecia: 2015-08-02 18:36:15
+  data_naprawy: 2015-08-02 18:36:15

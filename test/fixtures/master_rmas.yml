@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  element_rma_id: 1
+  user_id: 1
+  master: 
+  czynnosci: MyString
+
+two:
+  element_rma_id: 1
+  user_id: 1
+  master: 
+  czynnosci: MyString

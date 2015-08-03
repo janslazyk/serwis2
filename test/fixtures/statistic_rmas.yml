@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rma_id: 1
+  element_rma_id: 1
+  company_id: 1
+  producent_id: 1
+  user_id: 1
+  data_zgloszenia: 2015-08-02 19:47:40
+  data_dostawy: 2015-08-02 19:47:40
+  data_przyjecia: 2015-08-02 19:47:40
+  data_wys_do_serwiu: 2015-08-02 19:47:40
+  data_pow_z_serwisu: 2015-08-02 19:47:40
+  data_naprawy: 2015-08-02 19:47:40
+  data_odsyłki: 2015-08-02 19:47:40
+  czas_naprawy_laczny: 2015-08-02 19:47:40
+  czas_przestoju_logistyka: 2015-08-02 19:47:40
+  czas_naprawy_csi: 2015-08-02 19:47:40
+  czas_napr_w_serwisie: 2015-08-02 19:47:40
+
+two:
+  rma_id: 1
+  element_rma_id: 1
+  company_id: 1
+  producent_id: 1
+  user_id: 1
+  data_zgloszenia: 2015-08-02 19:47:40
+  data_dostawy: 2015-08-02 19:47:40
+  data_przyjecia: 2015-08-02 19:47:40
+  data_wys_do_serwiu: 2015-08-02 19:47:40
+  data_pow_z_serwisu: 2015-08-02 19:47:40
+  data_naprawy: 2015-08-02 19:47:40
+  data_odsyłki: 2015-08-02 19:47:40
+  czas_naprawy_laczny: 2015-08-02 19:47:40
+  czas_przestoju_logistyka: 2015-08-02 19:47:40
+  czas_naprawy_csi: 2015-08-02 19:47:40
+  czas_napr_w_serwisie: 2015-08-02 19:47:40

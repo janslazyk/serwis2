@@ -1,0 +1,48 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo pull-left" href="/"><span></span></a>
+      <div class="navbar-brand" style="padding-left: 114px; padding-top: 18px;" ><h4>System zgłoszeń serwisowych</h4></div>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <% if current_user %>
+      <!-- menu gdy zalogowany --start-- -->
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Sprawdź gwarancję" style="width: 201px;">
+        </div>
+        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="<%= yield(:list_rma) %>"><a href="#">Moje Zgłoszenia</a></li>
+        <li class="<%= yield(:new_rma) %>"><a href="#">Zgłoś Naprawę</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= current_user.email%> <span class="glyphicon glyphicon-user"><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class="<%= yield(:edit_user) %>" ><%= link_to 'Edycja - Użytkownika', edit_user_registration_path %></li>
+            <li class="<%= yield(:edig_company) %>" ><%= link_to 'Edycja - Dane Firmy', edit_company_path(current_user.company) %></li>
+            <li><a href="#">Dodaj Nowego Użytkownika</span></a></li>
+            <li><a href="#">Lista Użytkowników</a></li>
+            <li role="separator" class="divider"></li>
+            <li><%= link_to 'Wylogu', destroy_user_session_path, method: :delete %></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- menu gdy zalogowany --end-- -->
+      <% else %>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="<%= yield(:login) %>"><%= link_to 'Zaloguj się', new_user_session_path %></li>
+        </ul>
+      <% end %>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

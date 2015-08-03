@@ -1,0 +1,9 @@
+/usr/bin/ruby2.2 -r ./siteconf20150320-24647-zjv0pp.rb extconf.rb 
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+make: Nie ma nic do zrobienia w `all'.
+
+make "DESTDIR=" install

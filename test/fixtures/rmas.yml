@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number: 1
+  zgloszone: 1
+  user_id: 1
+  company_id: 1
+  contack_name_surname: MyString
+  tel: MyString
+  email: MyString
+  opt_adres_wys: MyText
+  data_zgloszenia: 2015-08-02 18:25:48
+
+two:
+  number: 1
+  zgloszone: 1
+  user_id: 1
+  company_id: 1
+  contack_name_surname: MyString
+  tel: MyString
+  email: MyString
+  opt_adres_wys: MyText
+  data_zgloszenia: 2015-08-02 18:25:48

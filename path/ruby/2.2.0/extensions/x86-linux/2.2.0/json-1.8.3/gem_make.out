@@ -1,0 +1,9 @@
+/usr/bin/ruby2.2 -r ./siteconf20150802-32678-18me4z8.rb extconf.rb 
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+make: Nie ma nic do zrobienia w `all'.
+
+make "DESTDIR=" install
